@@ -1,0 +1,9 @@
+.main_holder{
+    display: flex;
+}
+.bio_holder{
+    width: 30%;
+}
+.projects_holder{
+    width: 70%;
+}

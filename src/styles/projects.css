@@ -1,0 +1,26 @@
+.projects_nav{
+    display: flex;
+}
+.projects_nav div{
+    height: 50px;
+    padding: 0 10px;
+    line-height: 50px;
+    box-sizing: border-box;
+}
+.projects_nav div:hover{
+    border-bottom: solid 3px #FF0000;
+}
+.projects_nav div[flagCheck="1"]{
+    border-bottom: solid 3px #FF0000;
+}
+
+.search_holder{
+    display: flex;
+    padding: 10px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.projects_holder{
+    width: 70vw;
+}

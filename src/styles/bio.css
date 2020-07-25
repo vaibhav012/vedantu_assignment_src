@@ -1,0 +1,29 @@
+.bio_avatar{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 7.5vw;
+}
+.bio_detail{
+    text-align: left;
+}
+.bio_holder button{
+    float: left;
+}
+.bio_holder{
+    padding: 5%;
+}
+.bio_name{
+    margin-bottom: 0;
+}
+.bio_login{
+    margin-top: 0;
+}
+.bio_company{
+    margin-bottom: 0
+}
+.bio_location{
+    margin: 0
+}
+.bio_email{
+    margin-top: 0
+}

@@ -1,6 +1,9 @@
 import React from 'react';
+import Bio from './bio.js';
+import Projects from './projects.js';
+import '../styles/main.css'
 
-class Repo extends React.Component{
+class Main extends React.Component{
     constructor(props){
         super(props);
         this.state = {bio_data: {}}
@@ -8,7 +11,8 @@ class Repo extends React.Component{
 
     componentDidMount(){
         fetch("https://api.github.com/users/supreetsingh247")
-        .then((res.json()) => {
+        .then((res) => {
+            res = res.json()
             this.setState({
                 bio_data: res
             })
@@ -16,14 +20,12 @@ class Repo extends React.Component{
     }
     render(){
         return(
-            <li>
-                {this.props.repo.name}
-                    {this.props.repo.description}
-                        {this.props.repo.updated_at}
-                        <button>Star</button>
-            </li>
+            <div className="main_holder">
+                <Bio/>
+                <Projects/>
+            </div>
         )
     }
 }
 
-export default Repo
+export default Main
